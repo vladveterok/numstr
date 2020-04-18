@@ -2,7 +2,7 @@
 
 It's Numstr. And it's useless.
 
-Made as an educational gem, this tiny little bugger gets a number and returns its english version.
+Made as an educational gem, this tiny little bugger gets a number and returns its us-english version.
 
 That's all, please and thank you very much.
 
