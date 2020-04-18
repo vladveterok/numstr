@@ -30,7 +30,7 @@ $ irb
 2.7.0 :001 > require 'Numstr'
 ```
 
-You can play then or you can hit ENTER, get out of the loop and use it as follows:
+You can play then or you can hit ENTER, get out of the loop and use Numstr as follows:
 ```ruby
 Numstr.to_str(101)     # => 'one hundred one'
 Numstr.to_str(-999999) # => 'minus nine hundred ninety nine thousand nine hundred ninety nine'
