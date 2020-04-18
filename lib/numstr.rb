@@ -1,7 +1,7 @@
  #require "numstr/version"
 
-class Numstr
-  def self.english_number(num)
+ module Numstr
+  def self.in_num(num)
     return "C'mon! '#{num}' is not a number!" unless num.is_a? Integer
     return 'zero, null, nil, nada, zip, goose egg' if num.zero?
 
@@ -57,7 +57,7 @@ class Numstr
       left -= write * zill_base
 
       if write > 0
-        prefix = english_number write
+        prefix = in_num write
         num_string += prefix + ' ' + zill_name
 
         num_string += ' ' if left.positive?
@@ -87,25 +87,4 @@ class Numstr
   end
 end
 
-puts Numstr.english_number(false)
-puts 
-puts Numstr.english_number("...")
-puts Numstr.english_number("&^&%")
-puts Numstr.english_number(-0)
-puts Numstr.english_number("hi!")
-puts Numstr.english_number( 0)
-puts Numstr.english_number( -9)
-puts Numstr.english_number( -10)
-puts Numstr.english_number( -11)
-puts Numstr.english_number( -17)
-puts Numstr.english_number( -32)
-puts Numstr.english_number( -88)
-puts Numstr.english_number( -99)
-puts Numstr.english_number(-100)
-puts Numstr.english_number(101)
-puts Numstr.english_number(-234)
-puts Numstr.english_number(-3211)
-puts Numstr.english_number(-999999)
-puts Numstr.english_number(-1000000000000)
-puts Numstr.english_number(863724971203507846713847580327850678524758931757486238457037680425673467823)
 
