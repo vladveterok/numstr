@@ -1,8 +1,8 @@
  require "numstr/version"
 
  module Numstr
-  def self.in_num(num)
-    return "C'mon! '#{num}' is not a number!" unless num.is_a? Integer
+  def self.to_str(num)
+    # return "C'mon! '#{num}' is not a number!" unless num.is_a? Integer
     return 'zero, null, nil, nada, zip, goose egg' if num.zero?
 
     if num.negative?
@@ -57,7 +57,7 @@
       left -= write * zill_base
 
       if write > 0
-        prefix = in_num write
+        prefix = to_str write
         num_string += prefix + ' ' + zill_name
 
         num_string += ' ' if left.positive?
@@ -84,6 +84,21 @@
       num_string += ones_array[write - 1]
     end
     num_string
+  end
+end
+
+puts 'Hey! Put a whole number without breaks and EMBRACE THE POWER of this gem!!!11'
+puts "Want to get out of here? Don't put anything and hit the ENTER button, please and thank you."
+
+loop do
+  input = gets.chomp
+  
+  if input == ''
+    puts 'd-_-b'
+    break
+  else
+    next puts "C'mon! '#{input}' is not a number!" unless input =~ /\A[+-]?\d+(\.\d+)?\z/
+    puts Numstr.to_str input.to_i
   end
 end
 
