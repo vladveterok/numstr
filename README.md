@@ -21,8 +21,12 @@ Or install it yourself as:
     $ gem install numstr
 
 ## Usage
-
-TODO: Write usage instructions here
+```ruby
+Numstr.english_number(101)     # => 'one hundred one'
+Numstr.english_number(-999999) # => 'minus nine hundred ninety nine thousand nine hundred ninety nine'
+Numstr.english_number( 0)      # => 'zero, null, nil, nada, zip, goose egg'
+Numstr.english_number("hi!")   # => "C'mon! 'hi!' is not a number!"
+```
 
 ## Development
 
