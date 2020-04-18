@@ -1,4 +1,4 @@
- #require "numstr/version"
+ require "numstr/version"
 
  module Numstr
   def self.in_num(num)
