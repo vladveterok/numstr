@@ -30,14 +30,15 @@ $ irb
 2.7.0 :001 > require 'Numstr'
 ```
 
-You can play then or you can get out of the loop and use:
-
+You can play then or you can hit ENTER, get out of the loop and use it as follows:
 ```ruby
 Numstr.to_str(101)     # => 'one hundred one'
 Numstr.to_str(-999999) # => 'minus nine hundred ninety nine thousand nine hundred ninety nine'
 Numstr.to_str( 0)      # => 'zero, null, nil, nada, zip, goose egg'
 Numstr.to_str("hi!")   # => "C'mon! 'hi!' is not a number!"
 ```
+
+When you finally get bored, don't forget to uninstall the gem. Seriously, why on Earth would you need it?
 
 ## Development
 
