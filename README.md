@@ -27,7 +27,7 @@ Or install it yourself as:
 Run:
 ```
 $ irb
-2.7.0 :001 > require 'Numstr'
+2.7.0 :001 > require 'numstr'
 ```
 
 You can play then or you can hit ENTER, get out of the loop and use Numstr as follows:
