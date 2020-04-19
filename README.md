@@ -33,7 +33,7 @@ $ irb
 You can play then or you can hit ENTER, get out of the loop and use Numstr as follows:
 ```ruby
 Numstr.to_str(101)     # => 'one hundred one'
-Numstr.to_str(-999999) # => 'minus nine hundred ninety nine thousand nine hundred ninety nine'
+Numstr.to_str(-999999) # => 'negative nine hundred ninety nine thousand nine hundred ninety nine'
 Numstr.to_str( 0)      # => 'zero, null, nil, nada, zip, goose egg'
 Numstr.to_str("hi!")   # => "C'mon! 'hi!' is not a number!"
 ```

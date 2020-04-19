@@ -45,7 +45,7 @@
     left = num
 
     if negative
-      num_string = 'minus' + ' '
+      num_string = 'negative' + ' '
     end
 
     until zillions.empty?
